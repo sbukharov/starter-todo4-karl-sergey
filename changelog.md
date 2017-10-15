@@ -8,6 +8,10 @@ Project contributors:
 - Karl
 
 
+## [v0.2.0] - Oct 12, 4.03 am
+### Added
+- Updated homepage to show tasks remaining
+
 ## [v0.1.0] - Oct 12, 4.03 am
 ### Added
 - Added CSV task model to represent data in application.

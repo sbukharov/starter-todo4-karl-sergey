@@ -19,6 +19,19 @@ class Welcome extends Application
 	 */
 	public function index()
 	{
+		$tasks = $this->tasks->all();   // get all the tasks
+		
+		// count how many are not done
+		$count = 0;
+		foreach(array_reverse($tasks) as $task) {
+			$task->priority = $this->app->priority($task->priority);
+			$display_tasks[] = (array) $task;
+			$count++;
+			if ($count >= 5) break;
+		}
+		// and save that as a view parameter
+		$this->data['remaining_tasks'] = $count;
+		$this->data['display_tasks'] = $display_tasks;
 		$this->data['pagebody'] = 'homepage';
 		$this->render(); 
 	}
