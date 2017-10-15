@@ -7,16 +7,22 @@ Project contributors:
 - Sergey
 - Karl
 
-## [v0.3.0] - Oct 12, 4.03 am
+## [v0.4.0] - Oct 15, 1.49 pm
+### Added
+- Added Help Wanted page to site that uses markdown for formatting.
+- Added markdown processing capabilities by including markdown processing library.
+- Added first Help Wanted listing.
+
+## [v0.3.0] - Oct 12, 5.01 pm
 ### Added
 - Added Ordered List Page Features to /views page. This page is accessable by clicking the Work button
 on the menu
 
-## [v0.2.0] - Oct 12, 4.03 am
+## [v0.2.0] - Oct 12, 4.44 pm
 ### Added
 - Updated homepage to show tasks remaining
 
-## [v0.1.0] - Oct 12, 4.03 am
+## [v0.1.0] - Oct 12, 4.03 pm
 ### Added
 - Added CSV task model to represent data in application.
 
