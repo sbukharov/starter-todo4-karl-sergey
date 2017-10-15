@@ -7,6 +7,10 @@ Project contributors:
 - Sergey
 - Karl
 
+## [v0.3.0] - Oct 12, 4.03 am
+### Added
+- Added Ordered List Page Features to /views page. This page is accessable by clicking the Work button
+on the menu
 
 ## [v0.2.0] - Oct 12, 4.03 am
 ### Added
