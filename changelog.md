@@ -8,9 +8,13 @@ Project contributors:
 - Karl
 
 
-## [v0.6.0] - Oct 22, 2.49 pm
+## [v0.7.0] - Oct 22, 3.19 pm
 ### Added
 - Added pages to /mtce view
+
+## [v0.6.0] - Oct 22, 3.11 pm
+### Added
+- Added roles and role switching to site, displaying role on maintenance page.
 
 ## [v0.5.0] - Oct 22, 2.49 pm
 ### Added
