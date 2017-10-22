@@ -1,0 +1,1 @@
+This folder should be accessible to everyone.
