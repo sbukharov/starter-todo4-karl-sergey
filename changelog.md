@@ -8,6 +8,14 @@ Project contributors:
 - Karl
 
 
+## [v0.10.0] - Oct 22, 4.30 pm
+### Added
+- Added ability to edit additional fields through maintenance page (size, group, status.)
+
+## [v0.9.0] - Oct 22, 4.30 pm
+### Added
+- Added new functionality to maintenance page allowing items to added, edited and deleted.
+
 ## [v0.8.0] - Oct 22, 4.15 pm
 ### Added
 - Added links to maintenance page to allow adding and editing items.
