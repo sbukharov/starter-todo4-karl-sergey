@@ -17,7 +17,6 @@ class Mtce extends Application {
                 // build the task presentation output
                 $result = ''; // start with an empty array 
           
-                $tasks = $this->tasks->all(); // get all the tasks
                 foreach ($tasks as $task)
                 {
                         if (!empty($task->status))
