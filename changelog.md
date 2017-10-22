@@ -8,6 +8,10 @@ Project contributors:
 - Karl
 
 
+## [v0.8.0] - Oct 22, 4.15 pm
+### Added
+- Added links to maintenance page to allow adding and editing items.
+
 ## [v0.7.0] - Oct 22, 3.19 pm
 ### Added
 - Added pages to /mtce view
