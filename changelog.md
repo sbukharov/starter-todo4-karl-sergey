@@ -7,6 +7,31 @@ Project contributors:
 - Sergey
 - Karl
 
+
+## [v0.10.0] - Oct 22, 4.30 pm
+### Added
+- Added ability to edit additional fields through maintenance page (size, group, status.)
+
+## [v0.9.0] - Oct 22, 4.30 pm
+### Added
+- Added new functionality to maintenance page allowing items to added, edited and deleted.
+
+## [v0.8.0] - Oct 22, 4.15 pm
+### Added
+- Added links to maintenance page to allow adding and editing items.
+
+## [v0.7.0] - Oct 22, 3.19 pm
+### Added
+- Added pages to /mtce view
+
+## [v0.6.0] - Oct 22, 3.11 pm
+### Added
+- Added roles and role switching to site, displaying role on maintenance page.
+
+## [v0.5.0] - Oct 22, 2.49 pm
+### Added
+- Added maintenance page using view fragments
+
 ## [v0.4.0] - Oct 15, 1.49 pm
 ### Added
 - Added Help Wanted page to site that uses markdown for formatting.
