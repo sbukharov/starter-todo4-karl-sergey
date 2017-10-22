@@ -1,5 +1,5 @@
 # starter-todo
-Starter project for COMP4711 lab 5, Fall 2017
+COMP4711 Lab 6 project, Fall 2017
 
-It "works" out of the box, sort of, but needs beefing up :(
-Your job is to fix it, per lab 5 directions :)
+# important note
+Please ensure that you have a /tmp folder in the root directory of this application that ALL USERS on your machine can edit, read from , and write to.
