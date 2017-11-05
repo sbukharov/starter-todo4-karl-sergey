@@ -9,7 +9,8 @@ class Task extends CI_Model {
     private $size;
     private $status;
     private $flag;
-
+    
+    
     // If this class has a setProp method, use it, else modify the property directly
     public function __set($key, $value) {
         // if a set* method exists for this key, 
@@ -28,44 +29,59 @@ class Task extends CI_Model {
         return $this;
     }
     
+    /* constructor */
+    public function __construct() {
+    }
+    
+    /* creates new task */
+    public function instance() {
+        return new Task;
+    }
+    
     /*Setter for task data member.*/
     public function setTask($value) {
-        if (strlen($value) > 64 || !ctype_alnum($value)) {
-            throw new Exception('Only alphanumeric strings of length < 64 chars accepted.');
+        if (strlen($value) > 64) {
+            throw new Exception('Supplied task name too long.');
+        } elseif (!is_string($value)) {
+            throw new Exception('Supplied task name is not a string.');
         }
-        $this->$task = $value;
+        
+        $this->task = $value;
       }
+      
 
     /*Setter for group data member.*/
     public function setGroup($value) {
-      if (!($value > 1 && $value < 4)) {
+        if (!($value > 1 && $value < 4)) {
           throw new Exception('Expected group value : 1,2,3 or 4');
-      }
-      $this->$group = $value;
+        }
+        $this->group = $value;
     }
+       
 
     /*Setter for priority data member.*/
     public function setPriority($value) {
-      if (!($value > 1 && $value < 3)) {
+      if (!($value >= 1 && $value <= 3)) {
           throw new Exception('Expected group value : 1,2 or 3');
       }
-      $this->$priority = $value;
+      $this->priority = $value;
     }
+    
 
     /*Setter for size data member.*/
     public function setSize($value) {
-      if (!($value > 1 && $value < 3)) {
-          throw new Exception('Expected size value : 1,2 or 3');
-      }
-      $this->$size = $value;
+        if (!($value >= 1 && $value <= 3)) {
+              throw new Exception('Expected size value : 1,2 or 3');
+        }
+        $this->size = $value;
     }
 
     /*Setter for status data member.*/
     public function setStatus($value) {
-      if (!(value > 1 && $value < 2)) {
-          throw new Exception('Expected group value : 1 (in progress), 2 (complete)');
-      }
-      $this->$status = $value;
+        if (!(value >= 1 && $value <= 2)) {
+              throw new Exception('Expected group value : 1 (in progress), 2 (complete)');
+        }
+        $this->status = $value;
     }
 
     /*Setter for flag data member.*/
@@ -73,7 +89,8 @@ class Task extends CI_Model {
       if ($value != 1) {
           throw new Exception('Expected flag value: 1');
       }
-      $this->$flag = $value;
+      $this->flag = $value;
     }
+    
 }
 
