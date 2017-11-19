@@ -100,6 +100,25 @@ class XML_Model extends Memory_Model
 	{
 		// rebuild the keys table
 		$this->reindex();
+		$data = simplexml_load_file($this->_origin);
+		if ($data !== FALSE) 
+		{
+			//create our XMLElement to hold all of our tasks
+			$updatedData = new SimpleXMLElement('<tasks></tasks>');
+			foreach($this->_data as $key => $record)
+            {
+				$task = $updatedData->addChild('task');
+				foreach($record as $field => $value) 
+				{
+					$task->addChild($field, htmlspecialchars($value));
+				}
+			}
+		}
+		$dom = new DOMDocument('1.0', 'UTF-8');
+        $dom->preserveWhiteSpace = true;
+        $dom->formatOutput = true;
+        $dom->loadXml($updatedData->asXML());
+        $dom->save($this->_origin);
 	}
 
 }
