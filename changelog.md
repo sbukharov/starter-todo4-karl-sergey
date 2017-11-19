@@ -8,6 +8,10 @@ Project contributors:
 - Karl
 
 
+## [v0.11.0] - Nov 19, 1.30 pm
+### Added
+- Modified application to use XML data instead of CSV data for reading. Writing data remains to be implemented.
+
 ## [v0.11.0] - Nov 19, 12.30 pm
 ### Added
 - Added data in xml format.
