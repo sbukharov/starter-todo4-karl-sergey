@@ -8,6 +8,10 @@ Project contributors:
 - Karl
 
 
+## [v0.11.0] - Nov 19, 12.30 pm
+### Added
+- Added data in xml format.
+
 ## [v0.10.0] - Oct 22, 4.30 pm
 ### Added
 - Added ability to edit additional fields through maintenance page (size, group, status.)
