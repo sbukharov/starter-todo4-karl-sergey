@@ -7,6 +7,17 @@ Project contributors:
 - Sergey
 - Karl
 
+## [v0.13.0] - Nov 19, 4.30 pm
+### Added
+- Implmented writing function for XML data
+
+## [v0.12.0] - Nov 19, 1.30 pm
+### Added
+- Modified application to use XML data instead of CSV data for reading. Writing data remains to be implemented.
+
+## [v0.11.0] - Nov 19, 12.30 pm
+### Added
+- Added data in xml format.
 
 ## [v0.10.0] - Oct 22, 4.30 pm
 ### Added
