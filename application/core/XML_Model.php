@@ -97,7 +97,7 @@ class XML_Model extends Memory_Model
 	 * OVER-RIDE THIS METHOD in persistence choice implementations
 	 */
 	protected function store()
-	{
+		{
 		// rebuild the keys table
 		$this->reindex();
 		$data = simplexml_load_file($this->_origin);
@@ -120,5 +120,4 @@ class XML_Model extends Memory_Model
         $dom->loadXml($updatedData->asXML());
         $dom->save($this->_origin);
 	}
-
 }
